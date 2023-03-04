@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTReal</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <span class="menu">
+            <header class="container1">
+                <a href="index.html">
+                    <div id="home" class="nadpis"><ion-icon name="airplane-outline"
+                            class="ion-icon"></ion-icon><ion-icon name="business-outline"
+                            class="ion-icon"></ion-icon>NFTReal</div>
+                </a>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Search cool NFTs">
+                </div>
+            </header>
+            <nav class="container">
+
+                <a href="index.html"><button class="button is-ghost"
+                        style="color: white;text-decoration: none;">Home</button></a>
+                <a href="gaming.html"><button class="button is-ghost"
+                        style="color: white;text-decoration: none;">Gaming</button></a>
+            </nav>
+            <nav class="container2">
+                <ion-icon name="person-circle-outline" id="myBtn" style="cursor:pointer"></ion-icon>
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="text17">
+                            <p class="text18">Connect your wallet</p>
+                            <p>If you don't have a wallet, you can select a provider and create one now.</p>
+                        </div>
+                        <ul>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://opensea.io/static/images/logos/metamask-fox.svg"
+                                            alt="">Metamask</li>
+                                </div>
+                            </a>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://static.opensea.io/logos/walletlink-alternative.png"
+                                            alt="">Coinbase Wallet</li>
+                                </div>
+                            </a>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://static.opensea.io/logos/walletconnect-alternative.png"
+                                            alt="">WalletConnect</li>
+                                </div>
+                            </a>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://opensea.io/static/images/logos/ledgerconnect-alternative.png"
+                                            alt="">Ledger</li>
+                                </div>
+                            </a>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://opensea.io/static/images/logos/phantom.svg" alt="">Phantom</li>
+                                </div>
+                            </a>
+                            <a href="https://celejzivotfree.eu/">
+                                <div class="background1">
+                                    <li class="text19"><img class="img6"
+                                            src="https://lh3.googleusercontent.com/uBaatYG20TOMFFUCTEgwtaI9Q6l_Nqr0qKUGQPJHjKnlLDqhwQaQbAvQku4nyH8TVxZKx96RsiFduLrcw2vqqjrr=s48"
+                                            alt="">Bitkeep</li>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+                <script>
+                    var modal = document.getElementById("myModal");
+
+                    var btn = document.getElementById("myBtn");
+
+                    var span = document.getElementsByClassName("close")[0];
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn"
+                        onclick="closeNav()">&times;</a>
+                    <div class="border4">
+                        <div class="text15"><ion-icon name="person-circle-outline"></ion-icon></a>
+                            <div class="text16">My
+                                wallet</div></a>
+                        </div>
+                    </div>
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://static.opensea.io/logos/walletconnect-alternative.png"
+                                alt="">WalletConnect</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/metamask-fox.svg" alt="">MetaMask</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/ledgerconnect-alternative.png"
+                                alt="">Ledger</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://static.opensea.io/logos/walletlink-alternative.png" alt="">Coinbase
+                            Wallet</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/phantom.svg" alt="">Phantom</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://lh3.googleusercontent.com/uBaatYG20TOMFFUCTEgwtaI9Q6l_Nqr0qKUGQPJHjKnlLDqhwQaQbAvQku4nyH8TVxZKx96RsiFduLrcw2vqqjrr=s48"
+                                alt="">BitKeep</a> </div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://lh3.googleusercontent.com/uSYrwIYFZ-7kwg0-P_0YKubeNhFUN_jGg9J8bPbCOYjwW94jbFCEMqHUaV35sn0bvqujkuy6M72gjIRD4NTCirsQpXc=s48"
+                                alt="">Core</a> </div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/glow.svg" alt="">Glow</a> </div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://static.opensea.io/logos/fortmatic-alternative.png" alt="">Fortmatic</a>
+                    </div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://static.opensea.io/logos/trust-alternative.png" alt="">Trust</a></div>
+
+                    <div class="border4"> <a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/kaikas.png" alt="">Kaikas</a> </div>
+                    <div class="border4"> <a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://static.opensea.io/logos/bitski-alternative.png" alt="">BitSki</a></div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/opera-touch-alternative.svg"
+                                alt="">OperaTouch</a> </div>
+
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/venly.svg" alt="">Venly</a>
+                    </div>
+                    <div class="border4"><a href="https://celejzivotfree.eu/" class="a1"><img class="img4"
+                                src="https://opensea.io/static/images/logos/solflare.png" alt="">Solflare</a></div>
+                </div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><ion-icon
+                        name="wallet-outline"></ion-icon></span>
+                <script>  function openNav() { document.getElementById("mySidenav").style.width = "420px"; } function closeNav() { document.getElementById("mySidenav").style.width = "0"; }</script>
+                <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+            </nav>
+        </span>
+        <a href="#Trending"><button class="button is-ghost"
+                style="color: white;text-decoration: none;margin-left: 4%; margin-top: 1%; margin-bottom: -2%;">Trending</button>
+            <a href="#Artists"><button class="button is-ghost"
+                    style="color: white;text-decoration: none;margin-left: 0.1%; margin-top: 1%; margin-bottom: -2%;">Artists</button>
+            </a>
+            <a href="#info"><button class="button is-ghost"
+                    style="color: white;text-decoration: none;margin-left: 0.1%; margin-top: 1%; margin-bottom: -2%;">Information</button>
+            </a>
+            <ul class="ul1">
+                <a href="https://celejzivotfree.eu/" class="a1">
+                    <li class="li1"><img class="img5" src="lol1.jpg" alt="Nyan Cat">
+                        <div class="text1">Dead by daylight</div>
+                        <div class="text2">Floor: 15 WETH</div>
+                    </li>
+                </a>
+            </ul>
+            <div class="text5" id="Trending">Trending</div>
+            <div class="haha">
+                <table class="table1">
+                    <tr>
+                        <th colspan="3" class="th1-1">COLLECTION</th>
+                        <th class="th2">FLOOR PRICE</th>
+                        <th class="th4">
+                            <div class="th1-2">VOLUME</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">1</div>
+                        </td>
+                        <td>
+                            <img class="img2"
+                                src="https://www.privatedivision.com/wp-content/uploads/2023/02/KSP2EA_Keyart_Announce_2160x2160_alllogos.jpg"
+                                alt="">
+                        </td>
+                        <td class="td1">Kerbal Space<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">0.75 ETH
+                        </td>
+                        <td class="th3">0.205 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">2</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://www.gamespot.com/a/uploads/scale_medium/1593/15930215/3710100-avenge.jpg"
+                                alt=""></td>
+                        <td class="td1">Marvel Avengers</td>
+                        <td class="th1">
+                            0.39 ETH</td>
+                        <td class="th3">0.266 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">3</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://pbs.twimg.com/profile_images/1036139777970634752/OJB6MCGF_400x400.jpg"
+                                alt=""></td>
+                        <td class="td1">Fallout 76<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">1.19
+                            ETH</td>
+                        <td class="th3-1">141 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">4</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://image.api.playstation.com/vulcan/ap/rnd/202109/3002/iCip1728bKEwRLDVWXyQdCBy.png"
+                                alt=""></td>
+                        <td class="td1">Doki Doki<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">5.69 ETH
+                        </td>
+                        <td class="th3">1 226 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">5</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://openseauserdata.com/files/e9c66519afc3dac592d94c96f99323d6.png" alt="">
+                        </td>
+                        <td class="td1">Fortnight<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">50.9
+                            ETH</td>
+                        <td class="th3">3 278 ETH</td>
+                    </tr>
+                </table>
+                <table class="table1">
+                    <tr>
+                        <th colspan="3" class="th1-1">COLLECTION</th>
+                        <th class="th2">FLOOR PRICE</th>
+                        <th class="th4">
+                            <div class="th1-2">VOLUME</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">6</div>
+                        </td>
+                        <td>
+                            <img class="img2" src="K.png" alt="">
+                        </td>
+                        <div class="hover">
+                            <td class="td1">Kelvin<img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></td>
+                            <td class="th1">2.23 ETH
+                            </td>
+                            <td class="th3">2 023 ETH</td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">7</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://content.production.cdn.art19.com/images/78/29/a4/a6/7829a4a6-64f4-489d-81a9-2c8fb13050d8/2d87ab9a747a4f8af96f56833d7d452b57649e4e66197accd243a2fdda3d727f597a470f152836b0a017f9684905483b400cadd8801d7ccfa585413a24fa5502.jpeg"
+                                alt=""></tdt>
+                        <td class="td1">xX_JeSuS_Xx</td>
+                        <td class="th1">
+                            12.24 ETH</td>
+                        <td class="th3">2 412 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">8</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://www.clavecd.es/wp-content/uploads/buy-hobo-tough-life-cd-key-compare-prices.jpg"
+                                alt=""></td>
+                        <td class="td1">Hobo<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">7.25
+                            ETH</td>
+                        <td class="th3">2 017 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">9</div>
+                        </td>
+                        <td><img class="img2" src="H.png" alt=""></td>
+                        <td class="td1">Magic<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">2.10 ETH
+                        </td>
+                        <td class="th3">2 022 ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">
+                            <div class="td1-1">10</div>
+                        </td>
+                        <td><img class="img2"
+                                src="https://play-lh.googleusercontent.com/5LIMaa7WTNy34bzdFhBETa2MRj7mFJZWb8gCn_uyxQkUvFx_uOFCeQjcK16c6WpBA3E"
+                                alt=""></td>
+                        <td class="td1">Mario<img
+                                src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                class="emo"></td>
+                        <td class="th1">9.13
+                            ETH</td>
+                        <td class="th3">1 985 ETH</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text6" id="Artists">Notable Collections</div>
+            <a href="https://celejzivotfree.eu/" class="a1">
+                <ul class="ul2">
+                    <li class="card">
+                        <div class="card-con">
+                            <div class="flex">Airplane simulator<img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>50.87 ETH<span class="eth">2001 ETH</span></div>
+                        </div>
+                    </li>
+                    <li class="card1">
+                        <div class="card-con1">
+                            <div class="flex">Fortnight (Official) <img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>14.93 ETH<span class="eth">1309 ETH</span></div>
+                        </div>
+                    </li>
+                    <li class="card2">
+                        <div class="card-con2">
+                            <div class="flex">KittyKats (Official) <img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>12.12 ETH<span class="eth">64.89 ETH</span></div>
+                        </div>
+                    </li>
+                    <li class="card3">
+                        <div class="card-con3">
+                            <div class="flex">Sanic <img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>16.55 ETH<span class="eth">2728 ETH</span></div>
+                        </div>
+                    </li>
+                    <li class="card4">
+                        <div class="card-con4">
+                            <div class="flex">Velký Kouř<img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>18.47 ETH<span class="eth">2334 ETH</span></div>
+                        </div>
+                    </li>
+                    <li class="card5">
+                        <div class="card-con5">
+                            <div class="flex">Team fortress 2 <img
+                                    src="https://www.pngarts.com/files/10/Emoji-Verified-Instagram-PNG-Image.png" alt=""
+                                    class="emo"></div>
+                            <div class="pad">FLOOR <span class="volume">24H VOLUME</span></div>
+                            <div>11.54 ETH<span class="eth">2647 ETH</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </a>
+            <footer>
+                <div class="flex">
+                    <div class="text7">
+                        <div class="text9" id="info">Stay in the loop</div>
+                        <p class="text8">Join our mailing list to stay in the loop with our newest feature releases, NFT
+                            drops, and tips and tricks for navigating NFTReal.</p>
+                        <input type="text" class="input1" placeholder="Your email address"><button class="button2">Sign
+                            up</button>
+                    </div>
+                    <div class="text7">
+                        <div class="text9">Join the community</div>
+                        <p class="text8">
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-twitter"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-instagram"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-discord"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-reddit"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-youtube"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="logo-tiktok"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                            <a href="https://celejzivotfree.eu/"><button class="button3"><ion-icon name="mail-outline"
+                                        style="font-size: 24px;"></ion-icon></button></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="flex1">
+                        <div class="item1">
+                            <ion-icon name="airplane-outline" class="ion-icon"></ion-icon><ion-icon
+                                name="business-outline" class="ion-icon"></ion-icon>
+                            <div class="text12">NFTReal</div>
+                            <div>The world’s first and largest digital marketplace for crypto collectibles and
+                                non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</div>
+                        </div>
+                        <div class="item2">
+                            <div class="text10">Marketplace</div>
+                            <div class="item6">All NFTs</div>
+                            <div class="item6">Art</div>
+                            <div class="item6">Gaming</div>
+                            <div class="item6">Memberships</div>
+                            <div class="item6">PFPs</div>
+                            <div class="item6">Photography</div>
+                        </div>
+                        <div class="item3">
+                            <div class="text10">My Account</div>
+                            <div class="item6">Profil</div>
+                            <div class="item6">Favorites</div>
+                            <div class="item6">Watchlist</div>
+                            <div class="item6">My Collections</div>
+                            <div class="item6">Create</div>
+                            <div class="item6">Settings</div>
+                            <div class="text11">Stats</div>
+                            <div class="item6">Rankings</div>
+                            <div class="item6">Activity</div>
+
+                        </div>
+                        <div class="item4">
+                            <div class="text10">Resources</div>
+                            <div class="item6">Learn</div>
+                            <div class="item6">Help Center</div>
+                            <div class="item6">Platfrom Status</div>
+                            <div class="item6">Partners</div>
+                            <div class="item6">Taxes</div>
+                            <div class="item6">Blog</div>
+                            <div class="item6">Docs</div>
+                            <div class="item6">Newsletter</div>
+                        </div>
+
+
+                        <div class="item5">
+                            <div class="text10">Company</div>
+                            <div class="item6-1">About</div>
+                            <div class="item6">Careers</div>
+                            <div class="item6">Ventures</div>
+                            <div class="item6">Grants</div>
+                            <div class="text11">Learn</div>
+                            <div class="item6">What is an NFT?</div>
+                            <div class="item6">How to buy an NFT</div>
+                            <div class="item6">What are NFT drops?</div>
+                            <div class="item6">How to sell an NFT using NFTReal</div>
+                            <div class="item6">How to create an NFT on NFTReal</div>
+                            <div class="item6">What is a crypto wallet?</div>
+                            <div class="item6">What is cryptocurrency?</div>
+                            <div class="item6">What are blockchain gas fees?</div>
+                            <div class="item6">What is a blockchain?</div>
+                            <div class="item6">What is web3?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="text13">© 2023 - 2023 Scooby doo, Inc</div>
+                    <div class="text14">
+                        <a href="https://celejzivotfree.eu/" class="a2"> Privacy Policy</a>
+                        <a href="https://celejzivotfree.eu/" class="a2">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <a href="#home"><button class="button4"><ion-icon name="arrow-up-outline"
+                style="font-size: 42px;position: fixed; margin: -1.1%;"></ion-icon></button></a>
+</body>
+
+</html>
